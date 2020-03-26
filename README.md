@@ -32,7 +32,7 @@ Shown in the image below is an abstract view of the control flow of the model.
 Distributed System is a system with multiple components located on different machines that communicate and coordinate actions in order to appear as a single coherent system to the end user.\
 In our project,the role of Distributed System is that cameras are installed at different places and these cameras will store the data of that place and put the stored data on the server. The data of the server will be analyzed by using favorable machine learning algorithm and tools to identify the count of number of people at any location given a certain time. This then will be sent to the server of a nearest police station,so that police will find out how many people are standing in the crowd. If number of people exceed the threshold then the police will take actions accordingly.\
     
-## B) Image Extraction from Webcam and storing the image in database with webcam location.
+## B) Image Extraction from Webcam and storing the Image in Database with Webcam location.
 
   This task needs to be done in 3 parts:\
    (i) Extracting image from webcam:\
@@ -45,7 +45,7 @@ In our project,the role of Distributed System is that cameras are installed at d
    (iii) Storing image with corresponding webcam location in the database\
        → After fetching the location of webcam,the information containing webcam info.(i.e, license number in our case),
          image, location of the webcam will be stored in one of the distributed server, which can be further used for
-         processing the image.\
+         processing the image.
          
 <p align="center">
   <img src="images/stage1.png">
