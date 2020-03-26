@@ -28,12 +28,12 @@ In our project,the role of Distributed System is that cameras are installed at d
 
   This task needs to be done in 3 parts:\
    (i) Extracting image from webcam:\
-      →Webcam will capture the video continously,so we need to extract image frames from that video stream after some        
+      → Webcam will capture the video continously,so we need to extract image frames from that video stream after some       
         particular interval.This can be done using openCV and timer from time package in python.Also, we need to take care of 
         deleting/overwriting images after a particular time interval in database.\
    (ii) Fetching the location of webcam\
-      →We will fetch the location of webcam, using already created database (which we have created while installing the              cameras).The proposed structure of this database is <license_number,location>. Using this license number we will
-       fetch the location of the webcam. 
+      → We will fetch the location of webcam, using already created database (which we have created while installing the             cameras).The proposed structure of this database is <license_number,location>. Using this license number we will
+        fetch the location of the webcam.\
    (iii) Storing image with corresponding webcam location in the database\
        →
    
