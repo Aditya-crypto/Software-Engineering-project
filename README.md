@@ -15,7 +15,11 @@ Police informant system to detect social gathering during covid-19 breakdown
   <img src="images/model_intro.png">
 </p>
 
-# B) Image Extraction from Webcam and storing the image in database with webcam location.
+<p align="center">
+  <img src="images/stage1.png">
+</p>
+
+## B) Image Extraction from Webcam and storing the image in database with webcam location.
 
   This task needs to be done in 3 parts:\
    (i) Extracting image from webcam:\
