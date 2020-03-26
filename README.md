@@ -54,9 +54,9 @@ In our project,the role of Distributed System is that cameras are installed at d
          
  ## D) Data transmission and Alert message.
 
-    (i)Data transmission:\
+  (i)Data transmission:\
         The incoming picture will hit the image sensor of the Webcame which will break it up into individual pixels.The individual pixels will be converted into numeric form  and stored in the database.\
         
-    (ii)Alert message:\
+  (ii)Alert message:\
         If data from a particular Webcam involves gathering of people then the location of the corresponding Webcam will be extracted from the database and a message will be generated.
 
