@@ -25,10 +25,6 @@ Shown in the image below is an abstract view of the control flow of the model.
   <img src="images/model_intro.png">
 </p>
 
-<p align="center">
-  <img src="images/stage1.png">
-</p>
-
  ## A) Formation of Distributed System .
     
 Distributed System is a system with multiple components located on different machines that communicate and coordinate actions in order to appear as a single coherent system to the end user.\
@@ -49,6 +45,10 @@ In our project,the role of Distributed System is that cameras are installed at d
          image, location of the webcam will be stored in one of the distributed server, which can be further used for
          processing the image.
          
+<p align="center">
+  <img src="images/stage1.png">
+</p>
+
 ## C) Applying ML based techniques to identify the number of people in a particular image.
 The technique to estimate the number of objects/entities in an image is called “Crowd Counting”. In our case we will perform people counting ie., to find the count of people present in an image. There are various ways to perform this, which are as follows : 
 
@@ -68,6 +68,10 @@ We will employ the optimum performing method based on our experimentation with e
 
 After performing the above mentioned steps, we will obtain the number of people in a particular image of a location, which will be used for further action.
 
+<p align="center">
+  <img src="images/stage2.png">
+</p>
+
 ## D) Data transmission and Alert message.
 
   (i)Data transmission:\
@@ -75,3 +79,16 @@ After performing the above mentioned steps, we will obtain the number of people 
 
   (ii)Alert message:\
         If data from a particular Webcam involves gathering of people then the location of the corresponding Webcam will be extracted from the database and a message will be generated.
+        
+<p align="center">
+  <img src="images/stage3.png">
+</p>
+
+# IV. Language to be used : Python 
+# V. Team Members
+    2019201028- Divyani Indurkhya
+    2019201031- Richa Rathore
+    2019201047- Aditya Mohan Gupta
+    2019201067- Aditya Gupta
+    2019201068- Deeksha Sahu
+    2019201075- Kritika Singh
