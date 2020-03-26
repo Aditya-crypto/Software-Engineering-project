@@ -8,6 +8,9 @@ Police informant system to detect social gathering during covid-19 breakdown
     c) ML on images
     d) Data transmission and alert messages
 
+# I. INTRODUCTION
+    
+![](images/model_intro.png)
 
 
 # B) Image Extraction from Webcam and storing the image in database with webcam location.
