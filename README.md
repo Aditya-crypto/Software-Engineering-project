@@ -37,7 +37,7 @@ In our project,the role of Distributed System is that cameras are installed at d
    (iii) Storing image with corresponding webcam location in the database\
        →
 ## C) Applying ML based techniques to identify the number of people in a particular image.
-The technique to estimate the number of objects/entities in an image is called “Crowd Counting”. In our case we wil perform people counting. Ways to perform this are as follows : 
+The technique to estimate the number of objects/entities in an image is called “Crowd Counting”. In our case we will perform people counting ie., to find the count of people present in an image. There are various ways to perform this, which are as follows : 
 
 * Detection based methods
 * Regression based methods
