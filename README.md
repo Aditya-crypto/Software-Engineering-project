@@ -30,7 +30,7 @@ Shown in the image below is an abstract view of the control flow of the model.
   <img src="images/stage1.png">
 </p>
 
-## III. PROPOSED MODEL
+# III. PROPOSED MODEL
 
  ## A) Formation of Distributed System .
     
