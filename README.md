@@ -28,7 +28,7 @@ Shown in the image below is an abstract view of the control flow of the model.
  ## A) Formation of Distributed System .
  ### Why to have a distributed System;
  since there are many areas that come under a single police station and at a time many cameras can send pictures, so there can be heavy traffic on the server-side, moreover there are lot many police stations, so to route an image efficiently to the nearest police station we need to design micro service architecture which is heavily used in distributed systems for better efficiency and reliability.
- 
+ ### Distributed System
 Distributed System is a system with multiple components located on different machines that communicate and coordinate actions in order to appear as a single coherent system to the end user.\
 In our project,the role of Distributed System is that cameras are installed at different places and these cameras will store the data of that place and put the stored data on the server.The image obtained from the webcamera server will be processed using Machine learning tools and the number of people at any point at any location will be obtained. The the data of the server of these different places will be sent to the server of a nearest police station,so that police will find out how many people are standing in the crowd. If the number of people is more than the given threshold the police will act on them.
     
