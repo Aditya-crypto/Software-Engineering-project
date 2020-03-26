@@ -30,6 +30,8 @@ Shown in the image below is an abstract view of the control flow of the model.
   <img src="images/stage1.png">
 </p>
 
+## III. PROPOSED MODEL
+
  ## A) Formation of Distributed System .
     
 Distributed System is a system with multiple components located on different machines that communicate and coordinate actions in order to appear as a single coherent system to the end user.\
