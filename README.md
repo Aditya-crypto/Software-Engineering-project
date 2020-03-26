@@ -44,7 +44,7 @@ In our project,the role of Distributed System is that cameras are installed at d
         fetch the location of the webcam.\
    (iii) Storing image with corresponding webcam location in the database\
        → After fetching the location of webcam,the information containing webcam info.(i.e, license number in our case),
-         image, location of the webcam will be stored in one of the distributed server, which can be further used for
+         location,image of the webcam will be stored in one of the distributed server, which can be further used for
          processing the image.
          
 <p align="center">
