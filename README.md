@@ -32,6 +32,7 @@ In our project,the role of Distributed System is that cameras are installed at d
         particular interval.This can be done using openCV and timer from time package in python.Also, we need to take care of 
         deleting/overwriting images after a particular time interval in database.\
    (ii) Fetching the location of webcam\
-      → 
-    
-   (iii) Storing image with corresponding webcam location in the database
+      →We will fetch the location of webcam, using already created database (which we have created while installing the              cameras).The proposed structure of this database is <license_number,location in which it is installed>. Using this            license number we will first fetch the location of the webcam.  
+   (iii) Storing image with corresponding webcam location in the database\
+       →
+   
