@@ -35,5 +35,7 @@ In our project,the role of Distributed System is that cameras are installed at d
       → We will fetch the location of webcam, using already created database (which we have created while installing the             cameras).The proposed structure of this database is <license_number,location>. Using this license number we will
         fetch the location of the webcam.\
    (iii) Storing image with corresponding webcam location in the database\
-       →
+       → After fetching the location of webcam,the information containing webcam info.(i.e, license number in our case),
+         image, location of the webcam will be stored in one of the distributed server, which can be further used for
+         processing the image.\
    
