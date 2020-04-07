@@ -90,6 +90,10 @@ GOALS:
    h) An  alert message will be generated and the time and location of the corresponding webcam will be sent to the server of the nearest police station so that necessary actions can be taken on time.
 
    i) There will be multiple such interconnected servers for each every 10 to 15 webcams.
+   
+   <p align="center">
+  <img src="images/TIMELINE.png">
+</p>
 
   PROPOSED SOLUTION :
   
