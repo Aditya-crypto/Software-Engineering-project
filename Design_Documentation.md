@@ -1,25 +1,4 @@
-## Overview :
-
-We are in a situation of Corona - Virus(COVID -19) pandemic. The government has declared a lockdown pan India in order to prevent people
-from gathering at a place, which prevents the virus to spread amongst them, thus enforcing Social Distancing. Still it is observed on a 
-daily basis that, for some reasons, people are violating this lockdown and gathering at places outside their homes. This may have severe 
-effects and will definitely increase the spread of the virus.
-
-India being a large country, it is sometimes difficult for local police stations to monitor and efficiently manage each and every area
-under their jurisdiction, simultaneously.We have limited police force and with such population it is often difficult for the police to 
-control the situation.Thus, we need a system, which will help them in managing this lockdown.This is the motivation behind developing 
-our software.
-
-The motivation of our software is to inform the police about such social gatherings so that they can take strict actions and help to 
-avoid the transmission of COVID-19. The advantage of this system is that it helps the local police stations  to have an overall view 
-of the town by just getting alert images, this way they don't have to waste their time in patrolling all the time around the city.
-
-The overall idea is to develop a distributed system in which initially we take images from each camera located on various streets,
-then using Machine learning algorithms identify the number of people in the image and if the number is greater than a particular set 
-threshold, it sends an alert with time and location to the nearest police station. This is the main objective behind our software..Thus, reducing the overall effort of local police stations and providing current updates about the situations in the city. 
-
-
-## Goals:
+## GOALS:
 
 a) The main objective of the software is to prevent social gathering of people above a certain threshold value by capturing images of different street locations with the help of webcams deployed in those areas.
 
@@ -45,20 +24,33 @@ SCOPE AND TIMELINE:
   <img src="images/TIMELINE.png">
 </p>
 
-## Discussion :
+## Milestones:
+### The following need tobe checked point as our progress continues..    
 
-* A distributed system contains multiple nodes that are physically separate but linked together using the network and coordinate actions in order to appear as a single coherent system to the end user.
+ a) Image extraction from Webcam with location(database formation)
+ 
+ Checkpoint 1: successfully storing image with its location in local server Database.
+ 
+ Checkpoint 2: maintaining a  queue data structure for caching,
 
-* The role of the Distributed System is that cameras are installed at different places and these cameras will store the data of that place and put the stored data on the server. 
+ Checkpoint 3:  and if queue overflows then it is stored in disk, and retrieved back after some time.
+ 
+ b) Image processing for Machine Learning
+ 
+   Checkpoint 4: image extraction and Detecting crowd in the image using ML Algorithm.
+        
+   Checkpoint 5: getting image from CCTV after every 5 min, storing it in database
+                 and applying ML, should happen in parallel.
+                       
+c) Formation of Distributed System
 
-* The image obtained from the web camera server will be processed using Machine learning tools and the number of people at any point at any location will be obtained. The data of the server of these different places will be sent to the server of a nearest police station, so that police will find out how many people are standing in the crowd. 
+   Checkpoint 6: successfully routing image to other server.
+       
+   Checkpoint 7: Algorithm to find nearest neighbour, and applying consistent hashing methodology.
+   
+   Checkpoint 8: If server is down then routing to other nearest server.
+    
+d) Data transmission and alert messages to Nearest Police Station
 
-* Webcam will capture the video continuously, so we need to extract image frames from that video stream after some particular interval. This can be done using openCV and timer from the time package in python. Also, we need to take care of deleting/overwriting images after a particular time interval in the database.
+   Checkpoint 9: raise a alert message if number of people crossed the set threshold
 
-* We will fetch the location of the webcam, using an already created database (which we have created while installing the cameras).The proposed structure of this database is . Using this license number we will fetch the location of the webcam.
-
-* The information containing the webcam information, image, location of the webcam will be stored in one of the distributed servers, which can be further used for processing the image.
-
-* After this using  Machine Learning algorithms, Crowd Counting will be performed, ie, the number of people in a particular image. If it crosses the threshold, then it will be sent to the nearest local police station for further action ie., If data from a particular Webcam involves gathering of people then the location of the corresponding Webcam will be extracted from the database and a message will be generated.
-
-* The images will be collected after every 5-10 minutes of gap, and will be checked simultaneously and information will be sent to the stations, immediately if violation is found out at a particular place. Thus police will take directed action instantly, without miss and delays.
