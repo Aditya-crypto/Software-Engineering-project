@@ -32,26 +32,34 @@ then using Machine learning algorithms identify the number of people in the imag
 threshold, it sends an alert with time and location to the nearest police station. This is the main objective behind our software..Thus, reducing the overall effort of local police 
 stations and providing current updates about the situations in the city. 
 
-##Context##
 
-As the current scenario has bought us face to face with a pandemic disease, major steps needs to be taken to fight and recover 
-from it. To avoid being infected by Covid-19, the best way is to break the chain i.e, avoiding social gathering. Our Government 
-though has declared curfew in all parts of India, there are some who are not following it.
+## Context
+
+As the current scenario has bought us face to face with a pandemic disease, major steps needs to be taken to fight and recover from it. To avoid being infected by Covid-19, the best way is to break the chain i.e, avoiding social gathering. Our Government though has declared curfew in all parts of India, there are some who are not following it.
 
 The context of our software is to inform police about such social gatherings so that they can take strict actions and help to avoid the transmission of Covid-19. The advantage of this system is that it helps the police to have an overall view of the town by just getting alert images, this way they don't have to waste their time in patrolling all the time around the city.
 
 Google prepared the following report graph to help us and public health officials understand responses to social distancing guidance related to COVID-19.
 
-![Covid-19](https://github.com/divyanindurkhya/Software-Engineering-project/blob/master/images/covid-stats1.png)
-![Covid-19](https://github.com/divyanindurkhya/Software-Engineering-project/blob/master/images/covid-stats2.png)
+<p align="center">
+  <img src="images/covid-stats1.png">
+</p>
 
-As on 5th Apr , The Indian authorities continue to maintain that the country still has not reached stage 3 or community transmission phase of the novel coronavirus, despite a steady climb in the numbers of positive cases.
+<p align="center">
+  <img src="images/covid-stats2.png">
+</p>
+
+As on 5th Apr,The Indian authorities continue to maintain that the country still has not reached stage 3 or community transmission phase of the novel coronavirus, despite a steady climb in the numbers of positive cases.
 
 We all are very well aware of the fact that "Next few days will be very important for all and we need to sustain our containment efforts and utilize all available resources as per the requirement,"
 
 So,it is very important that lockdown should be implemented properly so that India successfully escapes the community transmission stage or the effects are minimised. And our model will surely help in mitigating the gathering of anti-social
 elements and in turn reducing the destruction caused by corona virus or Covid-19.
 
+The goal of this model is to capture images of various localities with the help of web cameras installed in different locations within the city and then processing those images to find out whether 
+number of people in that image is greater than the set threshold. If they are, then that image along with the location of that locality is send to the nearest police station so that police can take immediate action against these people, which in turn will diminish the gathering of these anti-social elements.
+
+India is currently unser 21 days lockdown period, but there is a possibility that this might extend further. So, here our project’s goal is to make efficient use of that lockdown and help reducing the spread of corona virus.
 Milestones:
 The following need to be checked point as our progress continues..   
  a) Image extraction from Webcam with location(database formation)
