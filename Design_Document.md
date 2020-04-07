@@ -32,6 +32,19 @@ then using Machine learning algorithms identify the number of people in the imag
 threshold, it sends an alert with time and location to the nearest police station. This is the main objective behind our software..Thus, reducing the overall effort of local police 
 stations and providing current updates about the situations in the city. 
 
+##Context##
+
+As the current scenario has bought us face to face with a pandemic disease, major steps needs to be taken to fight and recover 
+from it. To avoid being infected by Covid-19, the best way is to break the chain i.e, avoiding social gathering. Our Government 
+though has declared curfew in all parts of India, there are some who are not following it.
+
+The context of our software is to inform police about such social gatherings so that they can take strict actions and help to avoid the transmission of Covid-19. The advantage of this system is that it helps the police to have an overall view of the town by just getting alert images, this way they don't have to waste their time in patrolling all the time around the city.
+
+Google prepared the following report graph to help us and public health officials understand responses to social distancing guidance related to COVID-19.
+
+
+
+
 Milestones:
 The following need to be checked point as our progress continues..   
  a) Image extraction from Webcam with location(database formation)
