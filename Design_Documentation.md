@@ -66,7 +66,7 @@ h) An alert message will be generated and the time and location of the correspon
 i) There will be multiple such interconnected servers for each every 10 to 15 webcams.
 
 <p align="center">
-  <img src="images/goals.png">
+  <img src="images/goals.jpg">
 </p>
 
 
@@ -192,3 +192,24 @@ The technique to estimate the number of objects/entities in an image is called �
 * If data from a particular Webcam involves gathering of people then the location of the corresponding Webcam will be extracted from the database and a message will be generated.
 
 * The images will be collected after every 5-10 minutes of gap, and will be checked simultaneously and information will be sent to the stations, immediately if violation is found out at a particular place. Thus police will take directed action instantly, without miss and delays.
+
+
+
+## Software Model Used
+Agile model
+
+In this SDLC model requirements and solutions evolve through collaboration between various cross functional teams. This is known as an iterative and incremental model.
+
+Advantages
+
+•	Ensure customer satisfaction with rapid and continuous development of deliverables.
+
+•	It is a flexible model as customers, developers and testers continuously interact with each other
+
+•	Working software can be developed quickly and product can be adapted to changing requirements regularly
+
+Disadvantages
+
+•	In large and complex software development cases it becomes difficult to assess the effort required at the beginning of the cycle.
+
+•	Due to continuous interaction with the customer, the project can go off track if the customer is not clear about the goals.
