@@ -65,6 +65,10 @@ h) An alert message will be generated and the time and location of the correspon
 
 i) There will be multiple such interconnected servers for each every 10 to 15 webcams.
 
+<p align="center">
+  <img src="images/TIMELINE.png">
+</p>
+
 
 ## SCOPE AND TIMELINE:
 
