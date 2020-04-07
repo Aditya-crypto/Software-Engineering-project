@@ -8,3 +8,24 @@
 8. Altenative Solution
 9.Discussion
 10. Scope and Timeline
+
+*********************************************************************************************
+
+Overview :
+
+We are in a situation of Corona - Virus(COVID -19) pandemic. The government has declared a lockdown pan India in order to prevent people
+from gathering at a place, which prevents the virus to spread amongst them, thus enforcing Social Distancing. Still it is observed on a 
+daily basis that, for some reasons, people are violating this lockdown and gathering at places outside their homes. This may have severe 
+effects and will definitely increase the spread of the virus.
+
+India being a large country, it is sometimes difficult for local police stations to monitor and efficiently manage each and every area
+under their jurisdiction, simultaneously. This is the main objective behind our software.
+
+The motivation of our software is to inform the police about such social gatherings so that they can take strict actions and help to 
+avoid the transmission of Covid-19. The advantage of this system is that it helps the local police stations  to have an overall view 
+of the town by just getting alert images, this way they don't have to waste their time in patrolling all the time around the city.
+
+The overall idea is to develop a distributed system in which initially we take images from each camera located on various streets,
+then using Machine learning algorithms identify the number of people in the image and if the number is greater than a particular set 
+threshold, it sends an alert with time and location to the nearest police station.Thus, reducing the overall effort of local police 
+stations and providing current updates about the situations in the city. 
