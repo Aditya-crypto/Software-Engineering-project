@@ -42,7 +42,15 @@ The context of our software is to inform police about such social gatherings so 
 
 Google prepared the following report graph to help us and public health officials understand responses to social distancing guidance related to COVID-19.
 
-![Covid-19](https://github.com/divyanindurkhya/Software-Engineering-project/blob/master/images/covid-stats-1.png)
+![Covid-19](https://github.com/divyanindurkhya/Software-Engineering-project/blob/master/images/covid-stats1.png)
+![Covid-19](https://github.com/divyanindurkhya/Software-Engineering-project/blob/master/images/covid-stats2.png)
+
+As on 5th Apr , The Indian authorities continue to maintain that the country still has not reached stage 3 or community transmission phase of the novel coronavirus, despite a steady climb in the numbers of positive cases.
+
+We all are very well aware of the fact that "Next few days will be very important for all and we need to sustain our containment efforts and utilize all available resources as per the requirement,"
+
+So,it is very important that lockdown should be implemented properly so that India successfully escapes the community transmission stage or the effects are minimised. And our model will surely help in mitigating the gathering of anti-social
+elements and in turn reducing the destruction caused by corona virus or Covid-19.
 
 Milestones:
 The following need to be checked point as our progress continues..   
