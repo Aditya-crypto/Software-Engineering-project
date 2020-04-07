@@ -118,6 +118,8 @@ The technique to estimate the number of objects/entities in an image is called â
 
 ## Discussion :
 
+* The idea is to develop a system using Machine Learning + Distributed system architecture to detect crowd in different areas in a city and to inform the local police stations about this issue, in order to prevent COVID-19.
+
 * A distributed system contains multiple nodes that are physically separate but linked together using the network and coordinate actions in order to appear as a single coherent system to the end user.
 
 * The role of the Distributed System is that cameras are installed at different places and these cameras will store the data of that place and put the stored data on the server. 
