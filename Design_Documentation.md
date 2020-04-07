@@ -28,9 +28,11 @@ SCOPE AND TIMELINE:
 ### The following need tobe checked point as our progress continues..    
 
  a) Image extraction from Webcam with location(database formation)
-        Checkpoint 1: successfully storing image with its location in local server Database.                        
-        Checkpoint 2: maintaining a  queue data structure for caching,
-        Checkpoint 3:  and if queue overflows then it is stored in disk, and retrieved back after some time.
+ Checkpoint 1: successfully storing image with its location in local server Database.
+ 
+ Checkpoint 2: maintaining a  queue data structure for caching,
+
+ Checkpoint 3:  and if queue overflows then it is stored in disk, and retrieved back after some time.
  b) Image processing for Machine Learning
         Checkpoint 4: image extraction and Detecting crowd in the image using ML Algorithm.
         Checkpoint 5: getting image from CCTV after every 5 min, storing it in database 
