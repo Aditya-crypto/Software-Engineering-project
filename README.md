@@ -11,13 +11,13 @@ Police informant system to detect social gathering during covid-19 breakdown
 
 # I. MOTIVATION
 
-As the current scenario has brought us face to face with a pendamic disease, major steps needs to be taken to fight and recover from it. To avoid being infected by Covid-19, the best way is to break the chain i.e. avoiding social gathering. Our Government though has declared curfew in all parts of india, the citizens are not follwing it. 
+As the current scenario has brought us face to face with a pandemic disease, major steps needs to be taken to fight and recover from it. To avoid being infected by COVID-19, the best way is to break the chain i.e. avoiding social gathering. Our government though has declared curfew in all parts of india, the citizens are not following it. 
 
 The motivation of our software is to inform the police about such social gatherings so that they can take strict actions and help to avoid the transmission of Covid-19. The advantage of this system is that it helps the Police to have an overall view of the town by just getting alert images, this way they don't have to waste their time in patrolling all the time around the city.The basic assumption of our project is that cameras should be available to capture images.
 
 # II. INTRODUCTION
 
-Our proposed software is "Police informant system to detect social gathering during covid-19 breakdown". The idea is to develop a distributed system in which initially we take images from each camera located on various streets, then using Machine learning algorithms identify the number of people in the image and if the number is greater than the set threshold, it sends an alert with time and location to the nearest police station.
+Our proposed software is "Police informant system to detect social gathering during COVID-19 breakdown". The idea is to develop a distributed system in which initially we take images from each camera located on various streets, then using Machine learning algorithms identify the number of people in the image and if the number is greater than the set threshold, it sends an alert with time and location to the nearest police station.
 
 Shown in the image below is an abstract view of the control flow of the model. 
 
@@ -30,6 +30,7 @@ Shown in the image below is an abstract view of the control flow of the model.
  since there are many areas that come under a single police station and at a time many cameras can send pictures, so there can be heavy traffic on the server-side, moreover there are lot many police stations, so to route an image efficiently to the nearest police station we need to design micro service architecture which is heavily used in distributed systems for better efficiency and reliability.
  ### Distributed System
 Distributed System is a system with multiple components located on different machines that communicate and coordinate actions in order to appear as a single coherent system to the end user.\
+
 In our project,the role of Distributed System is that cameras are installed at different places and these cameras will store the data of that place and put the stored data on the server.The image obtained from the webcamera server will be processed using Machine learning tools and the number of people at any point at any location will be obtained. The the data of the server of these different places will be sent to the server of a nearest police station,so that police will find out how many people are standing in the crowd. If the number of people is more than the given threshold the police will act on them.
     
 ## B) Image Extraction from Webcam and storing the image in database with webcam location.
