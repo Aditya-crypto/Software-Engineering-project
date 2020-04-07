@@ -64,24 +64,35 @@ SCOPE AND TIMELINE:
 </p>
 
 ## Milestones:
-### The following need tobe checked point as our progress continues..    
+### The following need to be checked point as our progress continues..    
 
  a) Image extraction from Webcam with location(database formation)
-        Checkpoint 1: successfully storing image with its location in local server Database.                        
+ 
+        Checkpoint 1: successfully storing image with its location in local server Database 
+        
         Checkpoint 2: maintaining a  queue data structure for caching,
-        Checkpoint 3:  and if queue overflows then it is stored in disk, and retrieved back after some time.
+        
+        Checkpoint 3: and if queue overflows then it is stored in disk, and retrieved back after some time.
+        
  b) Image processing for Machine Learning
-        Checkpoint 4: image extraction and Detecting crowd in the image using ML Algorithm.
-        Checkpoint 5: getting image from CCTV after every 5 min, storing it in database 
-                       and applying ML, should happen in parallel.
+ 
+        Checkpoint 4: image extraction and Detecting crowd in the image using ML Algorithm
+        
+        Checkpoint 5: getting image from CCTV after every 5 min, storing it in database
+                      and applying ML, should happen in parallel.
                        
 c) Formation of Distributed System
-       Checkpoint 6: successfully routing image to other server.
-       Checkpoint 7: Algorithm to find nearest neighbour, and applying consistent hashing methodology.
-       Checkpoint 8: If server is down then routing to other nearest server.
+
+       Checkpoint 6: successfully routing image to other server
+       
+       Checkpoint 7: Algorithm to find nearest neighbour, and applying consistent hashing methodology
+       
+       Checkpoint 8: If server is down then routing to other nearest server
     
 d) Data transmission and alert messages to Nearest Police Station
+
        Checkpoint 9: raise a alert message if number of people crossed the set threshold
+       
 ## Proposed Solution :
   
 Covid-19 is in high demand right now,so our model will be over it in such a way that cameras are installed at different places and these cameras will store the data of that place and put the stored data 
