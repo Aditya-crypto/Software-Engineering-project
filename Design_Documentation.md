@@ -66,7 +66,18 @@ d) Data transmission and alert messages to Nearest Police Station
        Checkpoint 9: raise a alert message if number of people crossed the set threshold
 ## Proposed Solution :
   
+Covid-19 is in high demand right now,so our model will be over it in such a way that cameras are installed at different places and these cameras will store the data of that place and put the stored data 
+on the server. The image obtained from the webcamera server will be processed using Machine learning tools and the number of people at any point at any location will be obtained. The  data of the server
+of these different places will be sent to the server of a nearest police station,so that police will find out how many people are standing in the crowd. If the number of people is more than the given threshold
+the police will act on them.
+    
+Our model will have the most important role of the distributed system.
 
+ In a distributed system, the following things happen:
+     
+ -> All servers ,software and hardware components are located remotely.they coordinate and communicate with each other by passing the messages.
+ 
+ ->Resource sharing is the most important aspect of a distributed system. resources are managed by the servers and clients uses these resources.
      
   ### The second part of this project is how to extract the images from webcam and store the image in database with webcam location:
   
