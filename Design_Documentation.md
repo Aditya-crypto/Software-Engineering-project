@@ -45,6 +45,8 @@ elements and in turn reducing the destruction caused by corona virus or Covid-19
 The goal of this model is to capture images of various localities with the help of web cameras installed in different locations within the city and then processing those images to find out whether 
 number of people in that image is greater than the set threshold. If they are, then that image along with the location of that locality is send to the nearest police station so that police can take immediate action against these people, which in turn will diminish the gathering of these anti-social elements.
 
+India is currently unser 21 days lockdown period, but there is a possibility that this might extend further. So, here our project’s goal is to make efficient use of that lockdown and help reducing the spread of corona virus.
+
 ## Goals:
 
 a) The main objective of the software is to prevent social gathering of people above a certain threshold value by capturing images of different street locations with the help of webcams deployed in those areas.
@@ -64,7 +66,7 @@ h) An alert message will be generated and the time and location of the correspon
 i) There will be multiple such interconnected servers for each every 10 to 15 webcams.
 
 
-SCOPE AND TIMELINE:
+## SCOPE AND TIMELINE:
 
 
 <p align="center">
