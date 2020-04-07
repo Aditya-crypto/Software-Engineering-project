@@ -19,6 +19,24 @@ then using Machine learning algorithms identify the number of people in the imag
 threshold, it sends an alert with time and location to the nearest police station.This is the main objective behind our software.
 Thus, reducing the overall effort of local police stations and providing current updates about the situations in the city. 
 
+## Context
+
+As the current scenario has bought us face to face with a pandemic disease, major steps needs to be taken to fight and recover from it. To avoid being infected by Covid-19, the best way is to break the chain i.e, avoiding social gathering. Our Government though has declared curfew in all parts of India, there are some who are not following it.
+
+The context of our software is to inform police about such social gatherings so that they can take strict actions and help to avoid the transmission of Covid-19. The advantage of this system is that it helps the police to have an overall view of the town by just getting alert images, this way they don't have to waste their time in patrolling all the time around the city.
+
+Google prepared the following report graph to help us and public health officials understand responses to social distancing guidance related to COVID-19.
+
+![Covid-19](https://github.com/divyanindurkhya/Software-Engineering-project/blob/master/images/covid-stats1.png)
+![Covid-19](https://github.com/divyanindurkhya/Software-Engineering-project/blob/master/images/covid-stats2.png)
+
+As on 5th Apr,The Indian authorities continue to maintain that the country still has not reached stage 3 or community transmission phase of the novel coronavirus, despite a steady climb in the numbers of positive cases.
+
+We all are very well aware of the fact that "Next few days will be very important for all and we need to sustain our containment efforts and utilize all available resources as per the requirement,"
+
+So,it is very important that lockdown should be implemented properly so that India successfully escapes the community transmission stage or the effects are minimised. And our model will surely help in mitigating the gathering of anti-social
+elements and in turn reducing the destruction caused by corona virus or Covid-19.
+
 ## Goals:
 
 a) The main objective of the software is to prevent social gathering of people above a certain threshold value by capturing images of different street locations with the help of webcams deployed in those areas.
