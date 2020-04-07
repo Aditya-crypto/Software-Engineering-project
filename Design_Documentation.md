@@ -51,12 +51,17 @@ of these different places will be sent to the server of a nearest police station
 the police will act on them.
     
 Our model will have the most important role of the distributed system.
-     In a distributed system, the following things happen:
-     -> All servers ,software and hardware components are located remotely.they coordinate and communicate with each other by passing the messages.
-     ->Resource sharing is the most important aspect of a distributed system. resources are managed by the servers and clients uses these resources.
+
+ In a distributed system, the following things happen:
+     
+ -> All servers ,software and hardware components are located remotely.they coordinate and communicate with each other by passing the messages.
+ 
+ ->Resource sharing is the most important aspect of a distributed system. resources are managed by the servers and clients uses these resources.
      
   ### The second part of this project is how to extract the images from webcam and store the image in database with webcam location:
+  
   This task needs to be done in 3 parts:
+  
   (i) Extracting image from webcam:
             → Webcam will capture the video continously,so we need to extract image frames from that video stream after some
               particular interval.This can be done using openCV and timer from time package in python.Also, we need to take               care 
@@ -71,6 +76,7 @@ Our model will have the most important role of the distributed system.
               
     
  ### Name of some machine learning techniques that will be used in this project-
+ 
 The technique to estimate the number of objects/entities in an image is called “Crowd Counting”. In our case we will perform people counting ie., to find the count of people present in an image. There are various ways to perform this, which
 
  ->Regression based methods
