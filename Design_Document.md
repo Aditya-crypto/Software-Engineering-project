@@ -95,6 +95,13 @@ GOALS:
   <img src="images/goals.png">
 </p>
 
+## SCOPE AND TIMELINE:
+
+<p align="center">
+  <img src="images/TIMELINE.png">
+</p>
+
+
   PROPOSED SOLUTION :
   
 Covid-19 is in high demand right now,so our model will be over it in such a way that cameras are installed at different places and these cameras will store the data of that place and put the stored data 
