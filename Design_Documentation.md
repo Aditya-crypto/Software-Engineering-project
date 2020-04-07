@@ -27,8 +27,13 @@ The context of our software is to inform police about such social gatherings so 
 
 Google prepared the following report graph to help us and public health officials understand responses to social distancing guidance related to COVID-19.
 
-![Covid-19](https://github.com/divyanindurkhya/Software-Engineering-project/blob/master/images/covid-stats1.png)
-![Covid-19](https://github.com/divyanindurkhya/Software-Engineering-project/blob/master/images/covid-stats2.png)
+<p align="center">
+  <img src="images/covid-stats1.png">
+</p>
+
+<p align="center">
+  <img src="images/covid-stats2.png">
+</p>
 
 As on 5th Apr,The Indian authorities continue to maintain that the country still has not reached stage 3 or community transmission phase of the novel coronavirus, despite a steady climb in the numbers of positive cases.
 
@@ -36,6 +41,9 @@ We all are very well aware of the fact that "Next few days will be very importan
 
 So,it is very important that lockdown should be implemented properly so that India successfully escapes the community transmission stage or the effects are minimised. And our model will surely help in mitigating the gathering of anti-social
 elements and in turn reducing the destruction caused by corona virus or Covid-19.
+
+The goal of this model is to capture images of various localities with the help of web cameras installed in different locations within the city and then processing those images to find out whether 
+number of people in that image is greater than the set threshold. If they are, then that image along with the location of that locality is send to the nearest police station so that police can take immediate action against these people, which in turn will diminish the gathering of these anti-social elements.
 
 ## Goals:
 
@@ -117,12 +125,24 @@ Our model will have the most important role of the distributed system.
               particular interval.This can be done using openCV and timer from time package in python.Also, we need to take               care 
               of deleting/overwriting images after a particular time interval in database.
               
+     <p align="center">
+     <img src="images/stage1.png">
+     </p>
+              
  (ii) Fetching the location of webcam
             → We will fetch the location of webcam, using already created database (which we have created while installing                 the cameras).
               The proposed structure of this database is <license_number,location>. Using this license number we will fetch               the location of the webcam.
               
+     <p align="center">
+     <img src="images/stage2.png">
+     </p>
+              
   (iii) Storing image with corresponding webcam location in the database
             → After fetching the location of webcam,the information containing webcam info.(i.e, license number in our                     case),image, location of the webcam will be stored in one of the distributed server, which can be further used               for processing the image.
+            
+      <p align="center">
+     <img src="images/stage3.png">
+     </p>
               
     
  ### Name of some machine learning techniques that will be used in this project-
