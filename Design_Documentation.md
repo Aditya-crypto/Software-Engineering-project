@@ -125,24 +125,24 @@ Our model will have the most important role of the distributed system.
               particular interval.This can be done using openCV and timer from time package in python.Also, we need to take               care 
               of deleting/overwriting images after a particular time interval in database.
               
-     <p align="center">
-     <img src="images/stage1.png">
-     </p>
+  <p align="center">
+  <img src="images/stage1.png">
+  </p>
               
  (ii) Fetching the location of webcam
             → We will fetch the location of webcam, using already created database (which we have created while installing                 the cameras).
               The proposed structure of this database is <license_number,location>. Using this license number we will fetch               the location of the webcam.
               
-     <p align="center">
-     <img src="images/stage2.png">
-     </p>
+  <p align="center">
+  <img src="images/stage2.png">
+  </p>
               
   (iii) Storing image with corresponding webcam location in the database
             → After fetching the location of webcam,the information containing webcam info.(i.e, license number in our                     case),image, location of the webcam will be stored in one of the distributed server, which can be further used               for processing the image.
             
-      <p align="center">
-     <img src="images/stage3.png">
-     </p>
+  <p align="center">
+  <img src="images/stage3.png">
+  </p>
               
     
  ### Name of some machine learning techniques that will be used in this project-
