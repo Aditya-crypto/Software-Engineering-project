@@ -6,7 +6,7 @@
 6. Current Solution
 7. Proposed Solution
 8. Altenative Solution
-9.Discussion
+9. Discussion
 10. Scope and Timeline
 
 *********************************************************************************************
@@ -19,10 +19,12 @@ daily basis that, for some reasons, people are violating this lockdown and gathe
 effects and will definitely increase the spread of the virus.
 
 India being a large country, it is sometimes difficult for local police stations to monitor and efficiently manage each and every area
-under their jurisdiction, simultaneously.Thus, we need a system, which will help them in managing this lockdown.
+under their jurisdiction, simultaneously.We have limited police force and with such population it is often difficult for the police to 
+control the situation.Thus, we need a system, which will help them in managing this lockdown.This is the motivation behind developing 
+our software.
 
 The motivation of our software is to inform the police about such social gatherings so that they can take strict actions and help to 
-avoid the transmission of Covid-19. The advantage of this system is that it helps the local police stations  to have an overall view 
+avoid the transmission of COVID-19. The advantage of this system is that it helps the local police stations  to have an overall view 
 of the town by just getting alert images, this way they don't have to waste their time in patrolling all the time around the city.
 
 The overall idea is to develop a distributed system in which initially we take images from each camera located on various streets,
