@@ -130,6 +130,8 @@ The technique to estimate the number of objects/entities in an image is called â
 
 * The information containing the webcam information, image, location of the webcam will be stored in one of the distributed servers, which can be further used for processing the image.
 
-* After this using  Machine Learning algorithms, Crowd Counting will be performed, ie, the number of people in a particular image. If it crosses the threshold, then it will be sent to the nearest local police station for further action ie., If data from a particular Webcam involves gathering of people then the location of the corresponding Webcam will be extracted from the database and a message will be generated.
+* After this using  Machine Learning algorithms, Crowd Counting will be performed, ie, the number of people in a particular image. If it crosses the threshold, then it will be sent to the nearest local police station for further action.
+
+* If data from a particular Webcam involves gathering of people then the location of the corresponding Webcam will be extracted from the database and a message will be generated.
 
 * The images will be collected after every 5-10 minutes of gap, and will be checked simultaneously and information will be sent to the stations, immediately if violation is found out at a particular place. Thus police will take directed action instantly, without miss and delays.
