@@ -72,6 +72,7 @@ Our model will have the most important role of the distributed system.
     
  ### Name of some machine learning techniques that will be used in this project-
 The technique to estimate the number of objects/entities in an image is called “Crowd Counting”. In our case we will perform people counting ie., to find the count of people present in an image. There are various ways to perform this, which
+
  ->Regression based methods
  
  ->Detection based methods
@@ -81,6 +82,7 @@ The technique to estimate the number of objects/entities in an image is called �
  ->CNN(Convolutional Neural Network) based methods
  
  ### The Third part of this project is :Data transmission and Alert message
+ 
    (i)Data transmission:
       The incoming picture will hit the image sensor of the Webcame which will break it up into individual pixels.The             individual pixels will be converted into numeric form and stored in the database.
       
