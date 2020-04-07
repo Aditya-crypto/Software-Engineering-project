@@ -1,4 +1,4 @@
-GOALS:
+## GOALS:
 
 a) The main objective of the software is to prevent social gathering of people above a certain threshold value by capturing images of different street locations with the help of webcams deployed in those areas.
 
@@ -23,3 +23,24 @@ SCOPE AND TIMELINE:
 <p align="center">
   <img src="images/TIMELINE.png">
 </p>
+
+## Milestones:
+### The following need tobe checked point as our progress continues..    
+
+ a) Image extraction from Webcam with location(database formation)
+        Checkpoint 1: successfully storing image with its location in local server Database.                        
+        Checkpoint 2: maintaining a  queue data structure for caching,
+        Checkpoint 3:  and if queue overflows then it is stored in disk, and retrieved back after some time.
+ b) Image processing for Machine Learning
+        Checkpoint 4: image extraction and Detecting crowd in the image using ML Algorithm.
+        Checkpoint 5: getting image from CCTV after every 5 min, storing it in database 
+                       and applying ML, should happen in parallel.
+                       
+c) Formation of Distributed System
+       Checkpoint 6: successfully routing image to other server.
+       Checkpoint 7: Algorithm to find nearest neighbour, and applying consistent hashing methodology.
+       Checkpoint 8: If server is down then routing to other nearest server.
+    
+d) Data transmission and alert messages to Nearest Police Station
+       Checkpoint 9: raise a alert message if number of people crossed the set threshold
+
