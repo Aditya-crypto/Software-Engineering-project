@@ -42,8 +42,7 @@ The context of our software is to inform police about such social gatherings so 
 
 Google prepared the following report graph to help us and public health officials understand responses to social distancing guidance related to COVID-19.
 
-
-
+![Covid-19](https://github.com/divyanindurkhya/Software-Engineering-project/blob/master/images/covid-stats-1.png)
 
 Milestones:
 The following need to be checked point as our progress continues..   
