@@ -18,5 +18,6 @@ h) An alert message will be generated and the time and location of the correspon
 
 SCOPE AND TIMELINE:
 
-[TIMELINE!(https://github.com/divyanindurkhya/Software-Engineering-project/blob/master/images/TIMELINE.png?raw=true)]
-
+<p align="center">
+  <img src="images/TIMELINE.png">
+</p>
