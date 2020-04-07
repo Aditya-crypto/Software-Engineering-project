@@ -51,7 +51,7 @@ The following need to be checked point as our progress continues..
       Checkpoint 8: If server is down then routing to other nearest server.
       
  d) Data transmission and alert messages to Nearest Police Station
-      
+      Checkpoint 9: raise a alert message if number of people crossed the set threshold
 
 GOALS:
 
