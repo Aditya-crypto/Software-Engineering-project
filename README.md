@@ -4,9 +4,9 @@ Police informant system to detect social gathering during covid-19 breakdown
     I. Motivation
     II. Introduction
     III. Proposed Model
-        a) Formation of Distributed System
-        b) Image extraction from Webcam with location(database formation)
-        c) Image processing for Machine Learning
+        a) Image extraction from Webcam with location(database formation)
+        b) Image processing for Machine Learning
+        c) Formation of Distributed System
         d) Data transmission and alert messages to Nearest Police Station
 
 # I. MOTIVATION
