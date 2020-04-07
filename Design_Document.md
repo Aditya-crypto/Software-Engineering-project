@@ -92,7 +92,7 @@ GOALS:
    i) There will be multiple such interconnected servers for each every 10 to 15 webcams.
    
    <p align="center">
-  <img src="images/TIMELINE.png">
+  <img src="images/goals.png">
 </p>
 
   PROPOSED SOLUTION :
