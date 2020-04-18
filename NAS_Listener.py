@@ -12,7 +12,7 @@ import BuildMap
 #MAP GENERATOR
 #########################################
 
-NearestNeighbourMap=buildmap.MapBuilder()
+NearestNeighbourMap=BuildMap.MapBuilder()
 ServerPortNumber=int(sys.argv[1])
 
 #########################################
