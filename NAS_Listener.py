@@ -8,6 +8,10 @@ from collections import deque
 import BuildMap
 #import Crowddetector as CD
 
+#######################################
+#INTERFACE PART
+#######################################
+
 #########################################
 #MAP GENERATOR
 #########################################
