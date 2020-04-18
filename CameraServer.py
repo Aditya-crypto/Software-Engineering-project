@@ -4,7 +4,7 @@ import socket
 import os
 from collections import deque 
 import sys
-
+import ListGenerator as LG
 #######################################
 #INTERFACE PART
 #######################################
@@ -20,6 +20,7 @@ SequenceNumber=Serverportnumber%NumberOfNASservers
 ########################################
 #CONNECTING TO NAS
 ########################################
+NASServerlist=LG.CreateList()
 NASport,NASIPAddr=NASServerlist[SequenceNumber]
 NASport=int(NASport)
 NASIPAddr=str(NASIPAddr)
