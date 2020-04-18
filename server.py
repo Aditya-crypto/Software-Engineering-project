@@ -3,16 +3,20 @@ import signal, os
 import sounddevice as sd
 import numpy as np 
 from math import pi 
-
+import sys
 ######################################
+
+Serverportnumber=int(sys.argv[1])
+######################################
+
 s = socket.socket()          
 print ("Socket successfully created")
 port = 12346             
-s.bind(('', port))         
-print ("socket binded to %s" %(port))  
+s.bind(('', Serverportnumber))         
+print ("socket binded to %s" %(Serverportnumber))  
 s.listen(5)      
 print ("socket is listening") 
-c, addr = s.accept()  
+c, addr = s.accept()   
 ############################################
 
 msg=c.recv(4096)
