@@ -46,7 +46,9 @@ def AcceptRequest():
 
 cameraIDList=CD.FindCID()
 # img_id=[1,2,3,4]
-task=['t1','t2','t3','t4']
+task=[]
+for i in range(len(cameraIDList)):
+    task.append("t"+str(cameraIDList[i]))
 
 #########################################
 # REPORTING TO NEAREST POLICE SERVER
