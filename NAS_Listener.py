@@ -6,7 +6,9 @@ import numpy
 import threading 
 from collections import deque 
 import BuildMap
-#import Crowddetector as CD
+import CrowdDetector as CD
+import time
+
 
 #######################################
 #INTERFACE PART
@@ -16,8 +18,9 @@ import BuildMap
 #MAP GENERATOR
 #########################################
 
-NearestNeighbourMap=BuildMap.MapBuilder()
+NearestNeighbourMap=BuildMap.NearestNeighbourMapBuilder()
 ServerPortNumber=int(sys.argv[1])
+CameraLocationMap=BuildMap.LocationMapBuilder()
 
 #########################################
 # ACCEPT REQUEST
@@ -39,20 +42,10 @@ def AcceptRequest():
 	c.sendall(output.encode('utf-8'))
 	c.close() 
 
-
-########################################
-# MLCROWD DETECTING ALGORITHM
-########################################
-
-cameraIDList=CD.FindCID()
-# img_id=[1,2,3,4]
-task=[]
-for i in range(len(cameraIDList)):
-    task.append("t"+str(cameraIDList[i]))
-
 #########################################
 # REPORTING TO NEAREST POLICE SERVER
 #########################################
+
 def conn(CID,NearestNeighbourMap):
     s = socket.socket()           
     temp_list = NearestNeighbourMap[CID]
@@ -60,26 +53,30 @@ def conn(CID,NearestNeighbourMap):
 	ip_addr=str(ip_addr)
 	port=int(port)     
     s.connect((ip_addr, port))  
-    input = 'plzz take some action'
+    CameraLocation=CameraLocationMap[CID]
+    input = 'Crowd Found in '+CameraLocation+" area"
     s.sendall(input.encode('utf-8'))     
     print (s.recv(4096)) 
     s.close()
     
 ########################################
-# MULTITHREADING
+# MLCROWD DETECTING ALGORITHM
 ########################################
 
-if __name__ == "__main__": 
-    
-    CameraServerThread= threading.Thread(target=AcceptRequest,args=(), name=CameraServerThread)
-	CameraServerThread.start()
-    for i in range(len(img_id)):
+while(True):
+    cameraIDList=CD.GetList()
+    task=[]
+    for i in range(len(cameraIDList)):
+        task.append("t"+str(cameraIDList[i]))
+    CameraServerThread= threading.Thread(target=AcceptRequest,args=(), name="CameraServerThread")
+    CameraServerThread.start()
+    for i in range(len(cameraIDList)):
         task[i]= threading.Thread(target=conn,args=(cameraIDList[i],NearestNeighbourMap), name=task[i]) 
     for i in range(len(task)):
         task[i].start()
     for i in range(len(task)):
-        task[i].join()    
-  
+        task[i].join()
+    time.sleep(100)
 
 
 
