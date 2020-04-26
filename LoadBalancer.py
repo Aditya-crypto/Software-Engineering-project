@@ -61,9 +61,11 @@ if __name__ == "__main__":
     keys = CreateNFSList()
     # keys.sort()
     print(keys)
+    server_to_cam_mapping = {}
     consistentRing = ConsistentHashRing()
     for number in keys:
         consistentRing.add_node(number)
+        server_to_cam_mapping[number] = []
     cam_sev = []
     with open('database.txt') as f:
         content = f.read().splitlines()
@@ -80,9 +82,10 @@ if __name__ == "__main__":
     for i in cam_sev:
         print("i: ",i)
         best_match = consistentRing.find_best_match(i)
+        server_to_cam_mapping[best_match].append(i)
         print("best match: ",best_match)
 
-
+    print("server_to_cam_mapping: ",server_to_cam_mapping)
     # number_to_test = random.choice(keys)
     # print("number to test: ",number_to_test)
     # best_match = consistentRingWithSignedInputs.find_best_match(number_to_test)
