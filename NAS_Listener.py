@@ -22,6 +22,26 @@ NearestNeighbourMap=BuildMap.NearestNeighbourMapBuilder()
 ServerPortNumber=int(sys.argv[1])
 CameraLocationMap=BuildMap.LocationMapBuilder()
 
+
+#########################################
+# MONITORING
+#########################################
+
+def conn_monitor():
+    s = socket.socket()           
+    ip_addr="127.0.0.1"
+    port=1234
+    try:
+    	s.connect((ip_addr, port))
+    except:
+    	print("Monitor Server is not Responding !!!")
+    input = 'Server at '+str(ServerPortNumber)+' is alive'
+    while(True):
+    	s.sendall(input.encode('utf-8'))     
+    	print (s.recv(4096))
+    	time.sleep(10)
+    s.close()
+
 #########################################
 # ACCEPT REQUEST
 #########################################
@@ -63,24 +83,25 @@ def conn(CID,NearestNeighbourMap):
 # MLCROWD DETECTING ALGORITHM
 ########################################
 
+CameraServerThread= threading.Thread(target=AcceptRequest,args=(), name="CameraServerThread")
+CameraServerThread.start()
+MonitorConnection= threading.Thread(target=conn_monitor,args=(), name="MonitorConnection")
+MonitorConnection.start()
+
 while(True):
     cameraIDList=CD.GetList()
     task=[]
     for i in range(len(cameraIDList)):
         task.append("t"+str(cameraIDList[i]))
-    CameraServerThread= threading.Thread(target=AcceptRequest,args=(), name="CameraServerThread")
-    CameraServerThread.start()
     for i in range(len(cameraIDList)):
         task[i]= threading.Thread(target=conn,args=(cameraIDList[i],NearestNeighbourMap), name=task[i]) 
     for i in range(len(task)):
         task[i].start()
     for i in range(len(task)):
         task[i].join()
-    time.sleep(100)
+    time.sleep(10)
+CameraServerThread.join() 
+MonitorConnection.join()
 
 
 
-
-
-     
-  
